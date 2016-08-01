@@ -5,16 +5,9 @@
 </head>
 <body ng-controller="MovieController as vm">
 
-  <ul>
-    <li ng-repeat="dog in vm.dogs">
-      <span>{{dog.name}}</span> - <img ng-src="{{dog.img}}" height="100px" width="100px"/>
-    </li>
-  </ul>
-  <ul>
-    <li ng-repeat="bunny in vm.bunnies">
-      <span>{{bunny.name}}</span> - <img ng-src="{{bunny.img}}" height="100px" width="100px"/>
-    </li>
-  </ul>
+  <button type="button" name="button" ng-click="vm.pickColor('red')">Red</button>
+  <button type="button" name="button" ng-click="vm.pickColor('Green')">Green</button>
+  <button type="button" name="button" ng-click="vm.pickColor('Blue')">Blue</button>
 
   <!--libraries/frameworks/scripts-->
   <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
